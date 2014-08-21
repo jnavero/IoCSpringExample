@@ -6,7 +6,7 @@
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4486C666-7C48-4302-9C06-977D728CBA4D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Entities</RootNamespace>
     <AssemblyName>Entities</AssemblyName>
   </PropertyGroup>

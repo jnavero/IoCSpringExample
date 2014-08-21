@@ -69,8 +69,12 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="gtk-gui\IoCSpringExampleForm.DlgDiary.cs" />
-    <Compile Include="gtk-gui\IoCSpringExampleForm.frmDiary.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\IoCSpringExample\IoCSpringExample.csproj">
+      <Project>{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}</Project>
+      <Name>IoCSpringExample</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

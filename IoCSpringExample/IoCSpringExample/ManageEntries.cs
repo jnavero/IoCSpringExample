@@ -4,17 +4,13 @@ using ApplicationContext;
 
 namespace IoCSpringExample
 {
-	public class LoadEntries
+	public class ManageEntries
 	{
 		public LoadEntries ()
 		{
-
 			IDiaryEntry diaryEntrie = (IDiaryEntry) AppContext.Instance.GetObject("DiaryEntry");
-
-
-
-
 		}
+
 	}
 }
 

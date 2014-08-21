@@ -36,7 +36,7 @@ namespace Entities
 			}
 		}
 		private string _entry = string.Empty;
-		string Entry{ 
+		public string Entry{ 
 			get{
 				return _entry;
 			}

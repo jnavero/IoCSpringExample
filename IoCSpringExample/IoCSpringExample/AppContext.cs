@@ -24,7 +24,7 @@ namespace ApplicationContext
 		public static AppContext Instance
 		{
 			get{
-				if (AppContext == null)
+				if (_AppContext == null)
 				{
 					_AppContext = new AppContext();
 				}

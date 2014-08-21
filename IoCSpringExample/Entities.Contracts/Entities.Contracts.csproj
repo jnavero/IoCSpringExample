@@ -6,7 +6,7 @@
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4DF85A2E-3D11-4CD4-9A24-393428E17D1E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Entities.Contracts</RootNamespace>
     <AssemblyName>Entities.Contracts</AssemblyName>
   </PropertyGroup>
