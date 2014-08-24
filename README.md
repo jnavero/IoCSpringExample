@@ -1,5 +1,3 @@
-Prueba de confictos...
-
 Ejemplo de uso de Git / Mono / Uso de Spring
 
 ---------------------------------------------------
