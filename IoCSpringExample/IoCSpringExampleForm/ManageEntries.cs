@@ -6,7 +6,7 @@ namespace IoCSpringExample
 {
 	public class ManageEntries
 	{
-		public LoadEntries ()
+		public ManageEntries ()
 		{
 			IDiaryEntry diaryEntrie = (IDiaryEntry) AppContext.Instance.GetObject("DiaryEntry");
 		}

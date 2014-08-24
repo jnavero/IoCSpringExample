@@ -37,7 +37,6 @@ namespace ApplicationContext
 			return _SpringContext.GetObject (objectName);
 		}
 
-
 	}
 }
 

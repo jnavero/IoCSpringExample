@@ -1,20 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IoCSpringExample/LoadEntries.cs">
-    <Files>
-      <File FileName="IoCSpringExampleForm/MainWindow.cs" Line="14" Column="19" />
-      <File FileName="IoCSpringExample/LoadEntries.cs" Line="13" Column="3" />
-      <File FileName="Entities/DiaryEntry.cs" Line="13" Column="4" />
-      <File FileName="Entities.Contracts/IDiaryEntry.cs" Line="8" Column="30" />
-      <File FileName="IoCSpringExample/AppContext.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Entities" expanded="True" />
           <Node name="Entities.Contracts" expanded="True" />
-          <Node name="IoCSpringExample" expanded="True" selected="True" />
-          <Node name="IoCSpringExampleForm" expanded="True" />
+          <Node name="IoCSpringExampleForm" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

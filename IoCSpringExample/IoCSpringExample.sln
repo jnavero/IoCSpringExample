@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCSpringExample", "IoCSpringExample\IoCSpringExample.csproj", "{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.Contracts", "Entities.Contracts\Entities.Contracts.csproj", "{4DF85A2E-3D11-4CD4-9A24-393428E17D1E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{4486C666-7C48-4302-9C06-977D728CBA4D}"
@@ -27,10 +25,6 @@ Global
 		{BDFA0718-709B-4AA3-A83A-E5D3CD45CBF0}.Debug|x86.Build.0 = Debug|x86
 		{BDFA0718-709B-4AA3-A83A-E5D3CD45CBF0}.Release|x86.ActiveCfg = Release|x86
 		{BDFA0718-709B-4AA3-A83A-E5D3CD45CBF0}.Release|x86.Build.0 = Release|x86
-		{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}.Debug|x86.ActiveCfg = Debug|x86
-		{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}.Debug|x86.Build.0 = Debug|x86
-		{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}.Release|x86.ActiveCfg = Release|x86
-		{F2EE5F6A-3611-4A80-B56F-AD54C37F6173}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = IoCSpringExampleForm\IoCSpringExampleForm.csproj
