@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/IoCSpringExampleForm.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="356 359">
+  <widget class="Gtk.Window" id="MainWindow" design-size="356 541">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -20,7 +20,7 @@
         <child>
           <widget class="Gtk.VBox" id="vbox4">
             <property name="MemberName" />
-            <property name="Spacing">6</property>
+            <property name="Spacing">4</property>
             <child>
               <widget class="Gtk.HBox" id="hbox2">
                 <property name="MemberName" />
@@ -58,10 +58,9 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Calendar" id="calendar1">
+              <widget class="Gtk.Label" id="lblEntryDescription">
                 <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="DisplayOptions">35</property>
+                <property name="LabelProp" translatable="yes">Entry Description: </property>
               </widget>
               <packing>
                 <property name="Position">1</property>
@@ -71,11 +70,11 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow1">
                 <property name="MemberName" />
                 <property name="ShadowType">In</property>
                 <child>
-                  <widget class="Gtk.TextView" id="txtEntry1">
+                  <widget class="Gtk.TextView" id="textViewEntries">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="ShowScrollbars">True</property>
@@ -89,7 +88,17 @@
               </packing>
             </child>
             <child>
-              <placeholder />
+              <widget class="Gtk.Calendar" id="CalendarEntryDate">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="DisplayOptions">35</property>
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
             </child>
           </widget>
           <packing>
@@ -98,9 +107,9 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Fixed" id="fixed1">
+          <widget class="Gtk.Label" id="lblEntries">
             <property name="MemberName" />
-            <property name="HasWindow">False</property>
+            <property name="LabelProp" translatable="yes">All entries for the selected month:</property>
           </widget>
           <packing>
             <property name="Position">1</property>
@@ -110,15 +119,33 @@
           </packing>
         </child>
         <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.TextView" id="txtEntryDescription">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.HBox" id="hbox1">
             <property name="MemberName" />
             <property name="Spacing">9</property>
             <child>
-              <widget class="Gtk.Button" id="btnShowEntries">
+              <widget class="Gtk.Button" id="btnAddEntry">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
-                <property name="Label" translatable="yes">Show Entries</property>
+                <property name="Label" translatable="yes">Add Entry</property>
                 <property name="UseUnderline">True</property>
               </widget>
               <packing>
@@ -160,7 +187,8 @@
             </child>
           </widget>
           <packing>
-            <property name="Position">2</property>
+            <property name="PackType">End</property>
+            <property name="Position">3</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>

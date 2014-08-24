@@ -7,12 +7,12 @@ public partial class MainWindow
 	private global::Gtk.HBox hbox2;
 	private global::Gtk.Label lblEntryName;
 	private global::Gtk.Entry txtEntry;
-	private global::Gtk.Calendar calendar1;
+	private global::Gtk.Calendar CalendarEntryDate;
 	private global::Gtk.ScrolledWindow GtkScrolledWindow;
-	private global::Gtk.TextView txtEntry1;
+	private global::Gtk.TextView txtEntryDescription;
 	private global::Gtk.Fixed fixed1;
 	private global::Gtk.HBox hbox1;
-	private global::Gtk.Button btnShowEntries;
+	private global::Gtk.Button btnAddEntry;
 	private global::Gtk.Button btnSave;
 	private global::Gtk.Button btnExit;
 
@@ -59,12 +59,12 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox4.Gtk.Box+BoxChild
-		this.calendar1 = new global::Gtk.Calendar ();
-		this.calendar1.CanFocus = true;
-		this.calendar1.Name = "calendar1";
-		this.calendar1.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-		this.vbox4.Add (this.calendar1);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.calendar1]));
+		this.CalendarEntryDate = new global::Gtk.Calendar ();
+		this.CalendarEntryDate.CanFocus = true;
+		this.CalendarEntryDate.Name = "calendar1";
+		this.CalendarEntryDate.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+		this.vbox4.Add (this.CalendarEntryDate);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.CalendarEntryDate]));
 		w4.Position = 1;
 		w4.Expand = false;
 		w4.Fill = false;
@@ -73,10 +73,10 @@ public partial class MainWindow
 		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.txtEntry1 = new global::Gtk.TextView ();
-		this.txtEntry1.CanFocus = true;
-		this.txtEntry1.Name = "txtEntry1";
-		this.GtkScrolledWindow.Add (this.txtEntry1);
+		this.txtEntryDescription = new global::Gtk.TextView ();
+		this.txtEntryDescription.CanFocus = true;
+		this.txtEntryDescription.Name = "txtEntry1";
+		this.GtkScrolledWindow.Add (this.txtEntryDescription);
 		this.vbox4.Add (this.GtkScrolledWindow);
 		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.GtkScrolledWindow]));
 		w6.Position = 2;
@@ -97,13 +97,13 @@ public partial class MainWindow
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 9;
 		// Container child hbox1.Gtk.Box+BoxChild
-		this.btnShowEntries = new global::Gtk.Button ();
-		this.btnShowEntries.CanFocus = true;
-		this.btnShowEntries.Name = "btnShowEntries";
-		this.btnShowEntries.UseUnderline = true;
-		this.btnShowEntries.Label = global::Mono.Unix.Catalog.GetString ("Show Entries");
-		this.hbox1.Add (this.btnShowEntries);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnShowEntries]));
+		this.btnAddEntry = new global::Gtk.Button ();
+		this.btnAddEntry.CanFocus = true;
+		this.btnAddEntry.Name = "btnShowEntries";
+		this.btnAddEntry.UseUnderline = true;
+		this.btnAddEntry.Label = global::Mono.Unix.Catalog.GetString ("Show Entries");
+		this.hbox1.Add (this.btnAddEntry);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnAddEntry]));
 		w9.Position = 0;
 		w9.Expand = false;
 		w9.Fill = false;
