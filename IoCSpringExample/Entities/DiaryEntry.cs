@@ -6,14 +6,15 @@ namespace Entities
 	/// <summary>
 	/// Representa una entrada del diario.
 	/// </summary>
+    [Serializable()]
 	public class DiaryEntry : IDiaryEntry
 	{
 		public DiaryEntry ()
 		{
 		}
 
-		private int _identry = 0;
-		public int idEntry 
+        private Guid _identry;
+        public Guid idEntry 
 		{ 
 			get 
 			{

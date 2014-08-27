@@ -1,14 +1,14 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace Entities.Contracts
 {
 	/// <summary>
 	/// Entradas del diario.
 	/// </summary>
-	public interface IDiaryEntry
+    public interface IDiaryEntry
 	{
-
-		int idEntry { get; set;}
+        Guid idEntry { get; set;}
 		string nameEntry { get; set; }
 		string Entry{ get; set;}
 		DateTime date{ get; set;}

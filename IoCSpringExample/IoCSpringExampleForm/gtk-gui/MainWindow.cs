@@ -7,13 +7,15 @@ public partial class MainWindow
 	private global::Gtk.HBox hbox2;
 	private global::Gtk.Label lblEntryName;
 	private global::Gtk.Entry txtEntry;
-	private global::Gtk.Calendar CalendarEntryDate;
-	private global::Gtk.ScrolledWindow GtkScrolledWindow;
+	private global::Gtk.Label lblEntryDescription;
+	private global::Gtk.ScrolledWindow GtkScrolledWindow1;
 	private global::Gtk.TextView txtEntryDescription;
-	private global::Gtk.Fixed fixed1;
+	private global::Gtk.Calendar CalendarEntryDate;
+	private global::Gtk.Label lblEntries;
+	private global::Gtk.ScrolledWindow GtkScrolledWindow;
+	private global::Gtk.TextView txtAllEntryDescription;
 	private global::Gtk.HBox hbox1;
 	private global::Gtk.Button btnAddEntry;
-	private global::Gtk.Button btnSave;
 	private global::Gtk.Button btnExit;
 
 	protected virtual void Build ()
@@ -30,7 +32,7 @@ public partial class MainWindow
 		// Container child vbox3.Gtk.Box+BoxChild
 		this.vbox4 = new global::Gtk.VBox ();
 		this.vbox4.Name = "vbox4";
-		this.vbox4.Spacing = 6;
+		this.vbox4.Spacing = 4;
 		// Container child vbox4.Gtk.Box+BoxChild
 		this.hbox2 = new global::Gtk.HBox ();
 		this.hbox2.Name = "hbox2";
@@ -59,39 +61,60 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox4.Gtk.Box+BoxChild
-		this.CalendarEntryDate = new global::Gtk.Calendar ();
-		this.CalendarEntryDate.CanFocus = true;
-		this.CalendarEntryDate.Name = "calendar1";
-		this.CalendarEntryDate.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-		this.vbox4.Add (this.CalendarEntryDate);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.CalendarEntryDate]));
+		this.lblEntryDescription = new global::Gtk.Label ();
+		this.lblEntryDescription.Name = "lblEntryDescription";
+		this.lblEntryDescription.LabelProp = global::Mono.Unix.Catalog.GetString ("Entry Description: ");
+		this.vbox4.Add (this.lblEntryDescription);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.lblEntryDescription]));
 		w4.Position = 1;
 		w4.Expand = false;
 		w4.Fill = false;
 		// Container child vbox4.Gtk.Box+BoxChild
+		this.GtkScrolledWindow1 = new global::Gtk.ScrolledWindow ();
+		this.GtkScrolledWindow1.Name = "GtkScrolledWindow1";
+		this.GtkScrolledWindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+		// Container child GtkScrolledWindow1.Gtk.Container+ContainerChild
+		this.txtEntryDescription = new global::Gtk.TextView ();
+		this.txtEntryDescription.CanFocus = true;
+		this.txtEntryDescription.Name = "txtEntryDescription";
+		this.GtkScrolledWindow1.Add (this.txtEntryDescription);
+		this.vbox4.Add (this.GtkScrolledWindow1);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.GtkScrolledWindow1]));
+		w6.Position = 2;
+		// Container child vbox4.Gtk.Box+BoxChild
+		this.CalendarEntryDate = new global::Gtk.Calendar ();
+		this.CalendarEntryDate.CanFocus = true;
+		this.CalendarEntryDate.Name = "CalendarEntryDate";
+		this.CalendarEntryDate.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
+		this.vbox4.Add (this.CalendarEntryDate);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.CalendarEntryDate]));
+		w7.Position = 3;
+		w7.Expand = false;
+		w7.Fill = false;
+		this.vbox3.Add (this.vbox4);
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.vbox4]));
+		w8.Position = 0;
+		// Container child vbox3.Gtk.Box+BoxChild
+		this.lblEntries = new global::Gtk.Label ();
+		this.lblEntries.Name = "lblEntries";
+		this.lblEntries.LabelProp = global::Mono.Unix.Catalog.GetString ("All entries for the selected month:");
+		this.vbox3.Add (this.lblEntries);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.lblEntries]));
+		w9.Position = 1;
+		w9.Expand = false;
+		w9.Fill = false;
+		// Container child vbox3.Gtk.Box+BoxChild
 		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
 		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.txtEntryDescription = new global::Gtk.TextView ();
-		this.txtEntryDescription.CanFocus = true;
-		this.txtEntryDescription.Name = "txtEntry1";
-		this.GtkScrolledWindow.Add (this.txtEntryDescription);
-		this.vbox4.Add (this.GtkScrolledWindow);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.GtkScrolledWindow]));
-		w6.Position = 2;
-		this.vbox3.Add (this.vbox4);
-		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.vbox4]));
-		w7.Position = 0;
-		// Container child vbox3.Gtk.Box+BoxChild
-		this.fixed1 = new global::Gtk.Fixed ();
-		this.fixed1.Name = "fixed1";
-		this.fixed1.HasWindow = false;
-		this.vbox3.Add (this.fixed1);
-		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.fixed1]));
-		w8.Position = 1;
-		w8.Expand = false;
-		w8.Fill = false;
+		this.txtAllEntryDescription = new global::Gtk.TextView ();
+		this.txtAllEntryDescription.CanFocus = true;
+		this.txtAllEntryDescription.Name = "txtAllEntryDescription";
+		this.GtkScrolledWindow.Add (this.txtAllEntryDescription);
+		this.vbox3.Add (this.GtkScrolledWindow);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow]));
+		w11.Position = 2;
 		// Container child vbox3.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox ();
 		this.hbox1.Name = "hbox1";
@@ -99,25 +122,14 @@ public partial class MainWindow
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.btnAddEntry = new global::Gtk.Button ();
 		this.btnAddEntry.CanFocus = true;
-		this.btnAddEntry.Name = "btnShowEntries";
+		this.btnAddEntry.Name = "btnAddEntry";
 		this.btnAddEntry.UseUnderline = true;
-		this.btnAddEntry.Label = global::Mono.Unix.Catalog.GetString ("Show Entries");
+		this.btnAddEntry.Label = global::Mono.Unix.Catalog.GetString ("Add Entry");
 		this.hbox1.Add (this.btnAddEntry);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnAddEntry]));
-		w9.Position = 0;
-		w9.Expand = false;
-		w9.Fill = false;
-		// Container child hbox1.Gtk.Box+BoxChild
-		this.btnSave = new global::Gtk.Button ();
-		this.btnSave.CanFocus = true;
-		this.btnSave.Name = "btnSave";
-		this.btnSave.UseUnderline = true;
-		this.btnSave.Label = global::Mono.Unix.Catalog.GetString ("Save");
-		this.hbox1.Add (this.btnSave);
-		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnSave]));
-		w10.Position = 1;
-		w10.Expand = false;
-		w10.Fill = false;
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnAddEntry]));
+		w12.Position = 0;
+		w12.Expand = false;
+		w12.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.btnExit = new global::Gtk.Button ();
 		this.btnExit.CanFocus = true;
@@ -125,22 +137,26 @@ public partial class MainWindow
 		this.btnExit.UseUnderline = true;
 		this.btnExit.Label = "Exit";
 		this.hbox1.Add (this.btnExit);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnExit]));
-		w11.Position = 2;
-		w11.Expand = false;
-		w11.Fill = false;
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.btnExit]));
+		w13.Position = 2;
+		w13.Expand = false;
+		w13.Fill = false;
 		this.vbox3.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox1]));
-		w12.Position = 2;
-		w12.Expand = false;
-		w12.Fill = false;
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.hbox1]));
+		w14.PackType = ((global::Gtk.PackType)(1));
+		w14.Position = 3;
+		w14.Expand = false;
+		w14.Fill = false;
 		this.Add (this.vbox3);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
 		this.DefaultWidth = 356;
-		this.DefaultHeight = 359;
+		this.DefaultHeight = 541;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.CalendarEntryDate.MonthChanged += new global::System.EventHandler (this.OnCalendarEntryDateMonthChanged);
+		this.btnAddEntry.Clicked += new global::System.EventHandler (this.OnBtnAddEntryClicked);
+		this.btnExit.Clicked += new global::System.EventHandler (this.OnBtnExitClicked);
 	}
 }
